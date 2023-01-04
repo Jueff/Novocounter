@@ -103,8 +103,8 @@
 		var datetime = ""
 		if (currentdate.getDate()<10) datetime += "0";
 		datetime += currentdate.getDate() +".";
-		if (currentdate.getMonth()<10) datetime += "0";
-		datetime += currentdate.getMonth()+".";
+		if (currentdate.getMonth()+1<10) datetime += "0";
+		datetime += currentdate.getMonth()+1+".";
 		datetime += currentdate.getFullYear() + " - ";
 		if (currentdate.getHours()<10) datetime += "0";
 		datetime += currentdate.getHours() + ":";
